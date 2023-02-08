@@ -1,0 +1,15 @@
+@media (min-width: 1024px) {
+    .header{
+        margin: 0 13.5em;
+    }
+    .header__nav{
+        display: flex;
+        align-items: center;
+    }
+    .header__nav-logo{
+        max-height: 64px;
+    }
+    .header__nav-link+.header__nav-link{
+        margin-left: 1.5625em;
+    }
+}
