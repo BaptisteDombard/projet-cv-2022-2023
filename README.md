@@ -3,4 +3,4 @@ Pour ce projet, j'ai pris comme référence le page suivante : [Punch communicat
 
 ## ScreenCast de la page
 
-A réalisé
+voir le dossier "screencast"
