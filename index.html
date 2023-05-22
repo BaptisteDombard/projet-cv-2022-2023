@@ -5,108 +5,146 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Baptiste Dombard">
+    <meta name="description" content="CV de Baptiste Dombard">
+    <meta name="keyword" content="CV">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <title>CV Baptiste Dombard</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <h1 class="hidden">CV de Baptiste Dombard</h1>
         <nav class="header__nav">
             <h2 class="hidden">Navigation principal</h2>
             <div class="header__nav-logocontainer">
-                <a href="#" class="header__nav-link">
-                    <img src="./img/logo_personnel.png" alt="Baptiste Dombard Web developer" class="header__nav-logo">
-                </a>
+                <a href="#" class="header__nav-link header__nav-logolink">Acceuil</a>
             </div>
             <div class="header__nav-linkscontainer">
-                <a href="#" class="header__nav-link">Accueil</a>
-                <a href="#languages" class="header__nav-link">Langages</a>
+                <a href="#onboarding" class="header__nav-link">Accueil</a>
+                <a href="#languages__title" class="header__nav-link">Langages</a>
                 <a href="#qualities" class="header__nav-link">Qualités</a>
-                <a href="#work" class="header__nav-link">Réalisations</a>
+                <a href="#works" class="header__nav-link">Réalisations</a>
                 <a href="#contact" class="header__nav-link">Contact</a>
             </div>
         </nav>
     </header>
     <main class="main">
-        <section class="main__onboarding onboarding" aria-labelledby="onboarding__title">
+        <section class="main__onboarding onboarding" id="onboarding" aria-labelledby="onboarding__title">
             <div class="onboarding__parallax parallax1">
-                <h2 class="onboarding__title" id="onboarding__title">
-                    Avoir la banane
-                </h2>
-                <p>Je suis un web developer spécialisé en front-end, back-end ou en bonne humeur.</p>
-                <a href="#languages">Découvrez moi</a>
+                <div class="onboarding__container">
+                    <h2 class="onboarding__title" id="onboarding__title">
+                        Avoir la banane
+                    </h2>
+                    <p class="onboarding__excerpt">Je suis un web developer spécialisé en front-end, back-end ou en bonne humeur.</p>
+                    <a href="#languages" class="onboarding__link">Découvrez moi</a>
+                    <a href="#languages" class="onboarding__icon">7</a>
+                </div>
             </div>
         </section>
         <section class="main__languages languages" id="languages" aria-labelledby="languages__title">
-            <h2 class="languages__title" id="languages__title">Mes languages maitrisés</h2>
-            <div class="languages__html">
-                <img src="./img/logo_html.svg" alt="html" class="languages__html-logo" aria-labelledby="languages__html-title">
-                <h3 class="languages__html-title languages__title" id="languages__html-title">HTML</h3>
-                <p class="languages__html-excerpt">Le HTML, signifiant HyperText Markup Language, est le langage de base d’une page web. Avec son balisage bien précis, il représente le squelette d’un site. Il définit son contenu et sa structure. Le point central  du HTML, également celui du web, sont les liens.</p>
-                <a href="https://developer.mozilla.org/fr/docs/Web/HTML">En savoir plus sur le HTML</a>
+            <h2 class="languages__title" id="languages__title">MES LANGUAGES MAITRIS&Eacute;S</h2>
+
+            <div class="language__container" aria-labelledby="languages__html-title">
+                <img src="./img/logo_html.svg" alt="html" class="language__logo">
+                <div class="language__textcontainer">
+                    <h3 class="language__title" id="languages__html-title">HTML</h3>
+                    <p class="language__excerpt">Le HTML, signifiant HyperText Markup Language, est le langage de base d’une page web. Avec son balisage bien précis, il représente le squelette d’un site. Il définit son contenu et sa structure. Le point central  du HTML, également celui du web, sont les liens.</p>
+                </div>
+                <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="language__link">En savoir plus sur le HTML</a>
             </div>
-            <div class="languages__css" aria-labelledby="languages__css-title ">
-                <img src="./img/logo_css.svg" alt="css" class="languages__css-logo">
-                <h3 class="languages__css-title languages__title" id="languages__css-title">CSS</h3>
-                <p class="languages__css-excerpt">Le CSS ou Cascading Style Sheet, est un des languages principaux du web. Il est utilisé conjointement avec le html pour définir le style d’une page web. Il peut créer des espacements pour rendre une page plus aérée ou des animations pour créer un peu d’action.</p>
-                <a href="https://developer.mozilla.org/fr/docs/Web/CSS">En savoir plus sur le CSS</a>
+
+            <div class="language__container" aria-labelledby="languages__css-title ">
+                <img src="./img/logo_css.svg" alt="css" class="language__logo">
+                <div class="language__textcontainer">
+                    <h3 class="language__title" id="languages__css-title">CSS</h3>
+                    <p class="language__excerpt">Le CSS ou Cascading Style Sheet, est un des languages principaux du web. Il est utilisé conjointement avec le html pour définir le style d’une page web. Il peut créer des espacements pour rendre une page plus aérée ou des animations pour créer un peu d’action.</p>
+                </div>
+                <a href="https://developer.mozilla.org/fr/docs/Web/CSS" class="language__link">En savoir plus sur le CSS</a>
             </div>
-            <div class="languages__js" aria-labelledby="languages__js-title ">
-                <img src="./img/logo_js.svg" alt="js" class="languages__js-logo">
-                <h3 class="languages__js-title languages__title" id="languages__js-title">Javascript</h3>
-                <p class="languages__js-excerpt">Le Javascript est l’un des trois languages principaux du web et est la pierre angulaire d’un site interactif. Grâce à ses sturucture de contrôle, on peut réaliser toute sorte de chose pour rendre nos pages web animée.</p>
-                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">En savoir plus sur le Javascript</a>
+
+            <div class="language__container" aria-labelledby="languages__js-title ">
+                <img src="./img/logo_js.svg" alt="js" class="language__logo">
+                <div class="language__textcontainer">
+                    <h3 class="language__title" id="languages__js-title">JAVASCRIPT</h3>
+                    <p class="language__excerpt">Le Javascript est l’un des trois languages principaux du web et est la pierre angulaire d’un site interactif. Grâce à ses sturucture de contrôle, on peut réaliser toute sorte de chose pour rendre nos pages web animée.</p>
+                </div>
+                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" class="language__link">En savoir plus sur le Javascript</a>
             </div>
-            <div class="languages__php" aria-labelledby="languages__php-title ">
-                <img src="./img/logo_php.svg" alt="php" class="languages__php-logo">
-                <h3 class="languages__php-title languages__title" id="languages__php-title">PHP</h3>
-                <p class="languages__php-excerpt">Hypertext Preprocessor, plus connu sous l’abréviation PHP, est un langage utilisé côté serveur. Il permet via une serveur HTTP de rendre n’importe quel site dynamique. Ce langage est très utilisé dans le domaine à cause de sa rapidité et de sa flexibilité.</p>
-                <a href="https://www.php.net/">En savoir plus sur le PHP</a>
+
+            <div class="language__container" aria-labelledby="languages__php-title ">
+                <img src="./img/logo_php.svg" alt="php" class="language__logo">
+                <div class="language__textcontainer">
+                    <h3 class="language__title" id="languages__php-title">PHP</h3>
+                    <p class="language__excerpt">Hypertext Preprocessor, plus connu sous l’abréviation PHP, est un langage utilisé côté serveur. Il permet via une serveur HTTP de rendre n’importe quel site dynamique. Ce langage est très utilisé dans le domaine à cause de sa rapidité et de sa flexibilité.</p>
+                </div>
+                <a href="https://www.php.net/" class="language__link">En savoir plus sur le PHP</a>
             </div>
-            <div class="languages__sql" aria-labelledby="languages__sql-title ">
-                <img src="./img/logo_sql.png" alt="sql" class="languages__sql-logo">
-                <h3 class="languages__sql-title languages__title" id="languages__sql-title">SQL</h3>
-                <p class="languages__sql-excerpt">Le SQL ou Stuctured Query Language est un langage permettant d’interagir avec une base de donnée relationnel. Il peut aussi bien récupérer des données que en modifié ou même, couplé avec d’autre langage, vérifier des informations.</p>
-                <a href="https://sql.sh/">En savoir plus sur le SQL</a>
+
+            <div class="language__container" aria-labelledby="languages__sql-title ">
+                <img src="./img/logo_sql.png" alt="sql" class="language__logo">
+                <div class="language__textcontainer">
+                    <h3 class="language__title" id="languages__sql-title">SQL</h3>
+                    <p class="language__excerpt">Le SQL ou Stuctured Query Language est un langage permettant d’interagir avec une base de donnée relationnel. Il peut aussi bien récupérer des données que en modifié ou même, couplé avec d’autre langage, vérifier des informations.</p>
+                </div>
+                <a href="https://sql.sh/" class="language__link">En savoir plus sur le SQL</a>
             </div>
-            <div class="languages__dart" aria-labelledby="languages__dart-title ">
-                <img src="./img/logo_dart.png" alt="dart" class="languages__dart-logo">
-                <img src="./img/logo_flutter.png" alt="flutter" class="languages__flutter-logo">
-                <h3 class="languages__dart-title languages__title" id="languages__dart-title">Dart et Flutter</h3>
-                <p class="languages__dart-excerpt">Le SQL ou Stuctured Query Language est un langage permettant d’interagir avec une base de donnée relationnel. Il peut aussi bien récupérer des données que en modifié ou même, couplé avec d’autre langage, vérifier des informations.</p>
-                <a href="https://dart.dev/guides">En savoir plus sur le Dart</a>
+
+            <div class="language__container" aria-labelledby="languages__dart-title ">
+                <div class="language__logocontainer">
+                    <img src="./img/logo_dart.png" alt="dart" class="language__logo logo1">
+                    <img src="./img/logo_flutter.png" alt="flutter" class="language__logo logo2">
+                </div>
+                <div class="language__textcontainer">
+                    <h3 class="language__title" id="languages__dart-title">DART ET FLUTTER</h3>
+                    <p class="language__excerpt">Dart est un langage optimisé pour réaliser des applications disponible sur plusieurs plateforme. Durand mes étude, j’ai pu l’apprendre en utilisant Flutter. Il s’agit d’un kit de développement, open-source visant à nous aider à réaliser toute sortes d’application.</p>
+                </div>
+                <a href="https://dart.dev/guid" class="language__link">En savoir plus sur Dart</a>
             </div>
+
             <a href="#contact" class="languages__link">Voulez-vous me rencontrer ?</a>
         </section>
         <div class="main__parallax parallax2">
             <img src="./img/logo_personnel_blanc.png" alt="Baptiste Dombard Web developer" class="parallax2__logo">
         </div>
         <section class="main__qualities qualities" id="qualities" aria-labelledby="qualities__title">
-            <h2 class="qualities__title" id="qualities__title">Mes qualités</h2>
-            <div class="qualities__calm" aria-labelledby="qualities__calm-title">
-                <img src="./img/calm_icon.svg" alt="calme" class="qualities__calm-img" width="100">
-                <h3 class="qualities__calm-title" id="qualities__calm-title">Calme</h3>
-                <p class="qualities__calm-excerpt">Le calme est nécessaire dans ce métier. Savoir garder son sang froid en toute circonstance est une qualité que j’ai développée au fils des années qui s’avère être utile.</p>
-            </div>
-            <div class="qualities__auto" aria-labelledby="qualities__auto-title">
-                <img src="./img/thumb.svg" alt="autonome" class="qualities__auto-img" width="100">
-                <h3 class="qualities__auto-title" id="qualities__auto-title">Autonomie</h3>
-                <p class="qualities__auto-excerpt">L’autonomie est très importante. N’étant pas friand de contact sociaux étant plus jeune, même avec les professeurs, j’ai appris à me débrouillé par mes propres moyens.</p>
-            </div>
-            <div class="qualities__ponct" aria-labelledby="qualities__ponct-title">
-                <img src="./img/clock.svg" alt="ponctuel" class="qualities__ponct-img" width="100">
-                <h3 class="qualities__ponct-title" id="qualities__ponct-title">Ponctualité</h3>
-                <p class="qualities__ponct-excerpt">Je met un point d’honneur à être toujours à l’heure que ce soit au travail ou dans ma vie de tout les jours. </p>
-            </div>
-            <div class="qualities__symp" aria-labelledby="qualities__symp-title">
-                <img src="./img/smile.svg" alt="sympathique" class="qualities__symp-img" width="100">
-                <h3 class="qualities__symp-title" id="qualities__symp-title">Sympathique</h3>
-                <p class="qualities__symp-excerpt">Même si on peut avoir du mal à le remarquer au premier abord, une fois que l’on apprend à me connaitre on s’aperçoit que je peut apporter de la bonne humeur et de la gaieté dans un environnement.</p>
+            <div class="background__help">
+                <h2 class="qualities__title" id="qualities__title">MES QUALIT&Eacute;S</h2>
+
+                <div class="quality__container" aria-labelledby="qualities__calm-title">
+                    <img src="./img/calm_icon.svg" alt="" class="quality__img" width="100">
+                    <h3 class="quality__title" id="qualities__calm-title">Calme</h3>
+                    <p class="quality__excerpt">Le calme est nécessaire dans ce métier. Savoir garder son sang froid en toute circonstance est une qualité que j’ai développée au fils des années qui s’avère être utile.</p>
+                </div>
+
+                <div class="quality__container" aria-labelledby="qualities__auto-title">
+                    <img src="./img/thumb.svg" alt="" class="quality__img" width="100">
+                    <h3 class="quality__title" id="qualities__auto-title">Autonomie</h3>
+                    <p class="quality__excerpt">L’autonomie est très importante. N’étant pas friand de contact sociaux étant plus jeune, même avec les professeurs, j’ai appris à me débrouillé par mes propres moyens.</p>
+                </div>
+
+                <div class="quality__container" aria-labelledby="qualities__ponct-title">
+                    <img src="./img/clock.svg" alt="" class="quality__img" width="100">
+                    <h3 class="quality__title" id="qualities__ponct-title">Ponctualité</h3>
+                    <p class="quality__excerpt">Je met un point d’honneur à être toujours à l’heure que ce soit au travail ou dans ma vie de tout les jours. </p>
+                </div>
+
+                <div class="quality__container" aria-labelledby="qualities__symp-title">
+                    <img src="./img/smile.svg" alt="" class="quality__img" width="100">
+                    <h3 class="quality__title" id="qualities__symp-title">Sympathique</h3>
+                    <p class="quality__excerpt">Même si on peut avoir du mal à le remarquer au premier abord, une fois que l’on apprend à me connaitre on s’aperçoit que je peut apporter de la bonne humeur et de la gaieté dans un environnement.</p>
+                </div>
             </div>
         </section>
-        <section class="main__work work" id="work" aria-labelledby="work__title">
-            <h2 class="work__title" id="work__title">Mes dernières réalisations</h2>
-            <a href="#">Toutes mes réalisations</a>
+        <section class="main__work works" id="works" aria-labelledby="works__title">
+            <h2 class="works__title" id="works__title">Mes dernières réalisations</h2>
+            <ul class="works__list">
+                <li class="work__item work__item-icon">
+                    <a href="#works" class="work__link work__link-icon" title="Projet ic&ocirc;nes">Ic&ocirc;nes</a>
+                </li>
+            </ul>
+            <a href="#" class="works__link">Toutes mes réalisations</a>
+
         </section>
     </main>
 </body>

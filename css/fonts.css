@@ -1,7 +1,12 @@
 @font-face {
-    font-family: Abel;
-    src: url("../fonts/Abel-Regular.ttf") format("truetype");
+    font-family: "Abel";
+    src: url("../fonts/Abel-Regular.ttf") format("truetype") ;
 }
-body{
+@font-face {
+    font-family: "EleganIcon";
+    src: url("../fonts/ElegantIcons.ttf") format("truetype");
+}
+.body{
     font-family: Abel,Helvetica,Arial,Lucida,sans-serif;
 }
+
