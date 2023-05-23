@@ -17,6 +17,7 @@ html{
 }
 body{
     background-color: white;
+    color: rgb(88,88,84);
 }
 @media (min-width: 1024px) {
     /*-----------------------------------------------*/
@@ -92,6 +93,7 @@ body{
     .languages__title{
         font-size: 1.625em;
         font-weight: bold;
+        text-transform: uppercase;
         grid-column: 1/-1;
         justify-self: center;
         margin-bottom: 1.2884em;
@@ -117,6 +119,7 @@ body{
     .language__title{
         font-size: 1.4375em;
         margin-bottom: .4347em;
+        text-transform: uppercase;
     }
     .language__excerpt{
         grid-column: 2/-1;
@@ -203,7 +206,7 @@ body{
     .qualities{
         background-color: #e7e4de;
     }
-    .background__help{
+    .qualities__background-help{
         width: 65%;
         margin: 0 auto;
         padding: 5em 0;
@@ -214,6 +217,7 @@ body{
     .qualities__title{
         font-size: 1.625em;
         font-weight: bold;
+        text-transform: uppercase;
         grid-column: 1/-1;
         justify-self: center;
         margin-bottom: 1.2884em;
@@ -231,6 +235,7 @@ body{
     }
     .quality__title{
         font-size: 1.3125em;
+        text-transform: uppercase;
     }
     .quality__excerpt{
         line-height: 1.4875em;
@@ -252,7 +257,8 @@ body{
     .works__title{
         justify-self: center;
         font-size: 1.625em;
-        font-weight: bold
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
     .work__link{
@@ -292,5 +298,117 @@ body{
         position: relative;
         opacity: 100;
         transition: all 300ms ease 0ms;
+    }
+
+    /*----------------------*/
+    /*----Section overview--*/
+    /*----------------------*/
+
+    .overview{
+        background-color: #e7e4de;
+    }
+    .overview__background-help{
+        width: 65%;
+        margin: 0 auto;
+        padding: 5em 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-gap: 3.125em;
+    }
+    .overview__title{
+        justify-self: center;
+        font-size: 1.625em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .overview__logolist{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(0, 1fr));
+        grid-template-rows: repeat(auto-fit,minmax(0, 1fr));
+        justify-items: center;
+        align-items: center;
+        grid-gap: 3.75em;
+    }
+
+    .overview__btn{
+        color: white;
+        justify-self: center;
+        font-family: Abel, Helvetica, Arial, Lucida, sans-serif;
+        font-size: 1.125em;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.8em 1em;
+        background-color: #e1b600;
+        border: none;
+        border-radius: 3px;
+        margin-top: 1.25em;
+        position: relative;
+    }
+    .overview__btn::after{
+        content: "7";
+        font-family: EleganIcon, serif;
+        font-size: 0.833em;
+        padding-left: 0.3em;
+        position: absolute;
+        opacity: 0;
+    }
+    .overview__btn:hover::after, .overview__link:focus::after{
+        position: relative;
+        opacity: 100;
+        transition: all 300ms ease 0ms;
+    }
+
+    /*----------------------*/
+    /*----Section contact---*/
+    /*----------------------*/
+
+    .contact{
+
+    }
+    .contact__background-help{
+        width: 65%;
+        margin: 0 auto;
+        padding: 5em 0 7.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .texts__name{
+        font-size: 1.875em;
+        margin-bottom: 0.333333333333em;
+    }
+    .texts__phone{
+        color: #E1B600;
+        margin-bottom: 0.875em;
+    }
+    .texts__email{
+        color: #E1B600;
+    }
+    .contact__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact__input, .contact__textarea{
+        border: none;
+    }
+    .contact__button{
+        background-color: white;
+    }
+    .contact__input, .contact__textarea, .contact__button{
+        font-size: 16px;
+        padding: 1em;
+        margin-bottom: 1em;
+        font-family: Abel, Helvetica, Arial, Lucida, sans-serif;
+    }
+
+    /*----------------------*/
+    /*-------Footer---------*/
+    /*----------------------*/
+
+    .color__container{
+        width: 100%;
+        height: 20px;
+        background-color: #E1B600;
     }
 }
