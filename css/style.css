@@ -21,6 +21,9 @@ body{
     color: rgb(88,88,84);
 }
 
+.overview__btn, .contact__btn{
+    cursor: pointer;
+}
 
 /*-------Section Onboarding--------*/
 
@@ -252,7 +255,7 @@ body{
     background-color: #e7e4de;
 }
 .overview__background-help{
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
     padding: 5em 0;
     display: grid;
@@ -267,10 +270,15 @@ body{
     text-transform: uppercase;
 }
 .overview__logolist{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    grid-gap: 3.75em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 14em));
+    justify-items: center;
+    align-items: center;
+    grid-gap: 3em;
+}
+
+.overview__logoimg{
+   width: 100%;
 }
 
 .overview__btn{
@@ -301,6 +309,13 @@ body{
     transition: all 300ms ease 0ms;
 }
 
+.masked{
+    display: none;
+}
+
+.show-more{
+    display: list-item;
+}
 
 /*----Section contact----*/
 
@@ -337,10 +352,10 @@ body{
     border: none;
     margin-bottom: 1em;
 }
-.contact__button{
+.contact__btn{
     background-color: white;
 }
-.contact__input, .contact__textarea, .contact__button{
+.contact__input, .contact__textarea, .contact__btn{
     font-size: 16px;
     padding: 1em;
     font-family: Abel, Helvetica, Arial, Lucida, sans-serif;
@@ -479,7 +494,6 @@ body{
     }
 
     /*----Section overview--*/
-
 
 
     /*----Section contact---*/
