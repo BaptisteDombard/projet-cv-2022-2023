@@ -135,7 +135,15 @@
                     </div>
 
                     <div class="quality__container" aria-labelledby="qualities__ponct-title">
-                        <img src="./img/clock.svg" alt="" class="quality__img" width="100">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="100"
+                             height="100"
+                             viewBox="0 0 100 100" class="quality__img">
+                            <circle cx="50" cy="50" r="47" fill="none" stroke="#E1B600" stroke-width="5"/>
+                            <circle cx="50" cy="50" r="5" fill="#E1B600"/>
+                            <line x1="50" y1="50" x2="50" y2="15" stroke="#E1B600" stroke-width="3"/>
+                            <line x1="50" y1="50" x2="30" y2="80" stroke="#E1B600" stroke-width="3"/>
+                        </svg>
                         <h3 class="quality__title" id="qualities__ponct-title">Ponctualité</h3>
                         <p class="quality__excerpt">Je met un point d’honneur à être toujours à l’heure que ce soit au travail ou dans ma vie de tout les jours. </p>
                     </div>
@@ -150,24 +158,27 @@
         </section>
         <section class="main__works works" id="works" aria-labelledby="works__title">
             <h2 class="works__title" id="works__title">Mes dernières réalisations</h2>
-            <ul class="works__list">
-                <li class="work__item work__item-icon">
-                    <img src="./img/graph_logo.png" alt="" class="work__img-icon">
+            <div class="works__list">
+                <div class="work__item work__item-icon">
+                    <img src="./img/graph_logo.png" alt="" class="work__img work__img-icon">
                     <a href="#works" class="work__link work__link-icon" title="Projet ic&ocirc;nes">Ic&ocirc;nes</a>
-                </li>
-                <li class="work__item work__item-logo">
-                    <img src="./img/logo_personnel.png" alt="" class="work__img work__img-logo">
-                    <a href="#works" class="work__link work__link-logo" title="Projet logo personnel">Logo personnel</a>
-                </li>
-                <li class="work__item work__item-movie">
-                    <img src="./img/logo_cinest.png" alt="" class="work__img work__img-movie">
-                    <a href="#works" class="work__link work__link-movie" title="Projet Movie App">Movie App</a>
-                </li>
-                <li class="work__item work__item-instruction">
-                    <img src="./img/mode_d_emploi.png" alt="" class="work__img work__img-instruction" width="500">
-                    <a href="#works" class="work__link work__link-instruction" title="Projet Mode d'emploi">Mode d'emploi</a>
-                </li>
-            </ul>
+                </div>
+                <div class="works__triplet">
+                    <div class="work__item-triplet work__item-logo">
+                        <img src="./img/logo_personnel.png" alt="" class="work__img work__img-logo">
+                        <a href="#works" class="work__link work__link-logo" title="Projet logo personnel">Logo personnel</a>
+                    </div>
+                    <div class="work__item-triplet work__item-movie">
+                        <img src="./img/logo_cinest.png" alt="" class="work__img work__img-movie">
+                        <a href="#works" class="work__link work__link-movie" title="Projet Movie App">Movie App</a>
+                    </div>
+                    <div class="work__item-triplet work__item-instruction">
+                        <img src="./img/mode_d_emploi.png" alt="" class="work__img work__img-instruction">
+                        <a href="#works" class="work__link work__link-instruction" title="Projet Mode d'emploi">Mode d'emploi</a>
+                    </div>
+                </div>
+
+            </div>
             <a href="#" class="works__link">Toutes mes réalisations</a>
 
         </section>
@@ -176,28 +187,28 @@
                 <h2 class="overview__title" id="overview__title">Mon parcours et Mes passions</h2>
                 <ul class="overview__logolist">
                     <li class="overview__logoitem">
-                        <img src="./img/logo_saint_nicolas.png" alt="" class="overview__logoimg" width="200">
+                        <img src="./img/logo_saint_nicolas.png" alt="" class="overview__logoimg">
                     </li>
                     <li class="overview__logoitem">
-                        <img src="./img/logo_indh.png" alt="" class="overview__logoimg" width="300">
+                        <img src="./img/logo_indh.png" alt="" class="overview__logoimg">
                     </li>
                     <li class="overview__logoitem">
-                        <img src="./img/logo_hech_noir.png" alt="" class="overview__logoimg" width="150">
+                        <img src="./img/logo_hech_noir.png" alt="" class="overview__logoimg">
                     </li>
                     <li class="overview__logoitem">
-                        <img src="./img/logo_hepl_noir.png" alt="" class="overview__logoimg" width="300">
+                        <img src="./img/logo_hepl_noir.png" alt="" class="overview__logoimg">
                     </li>
                     <li class="overview__logoitem">
-                        <img src="./img/maneki-neko.png" alt="" class="overview__logoimg" width="200">
+                        <img src="./img/maneki-neko.png" alt="" class="overview__logoimg">
                     </li>
                     <li class="overview__logoitem">
-                        <img src="./img/console.png" alt="" class="overview__logoimg" width="200">
+                        <img src="./img/console.png" alt="" class="overview__logoimg">
                     </li>
                     <li class="overview__logoitem">
-                        <img src="./img/pikachu.png" alt="" class="overview__logoimg" width="200">
+                        <img src="./img/pikachu.png" alt="" class="overview__logoimg">
                     </li>
                     <li class="overview__logoitem">
-                        <img src="./img/music-note.png" alt="" class="overview__logoimg" width="200">
+                        <img src="./img/music-note.png" alt="" class="overview__logoimg">
                     </li>
                     <li class="overview__logoitem">
                         <img src="./img/travel.png" alt="" class="overview__logoimg">

@@ -6,3 +6,7 @@ Pour ce projet, j'ai pris comme référence le page suivante : [Punch communicat
 Pour visualiser le screencast, voir le dossier "screencast"
 
 Pour visualiser le screenshot, voir le dossier "screenshot"
+
+## Design
+
+Pour visualiser le design, voir le fichier "design.pdf"
